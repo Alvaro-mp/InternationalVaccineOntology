@@ -1498,7 +1498,7 @@
         <hasLicense rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#License5"/>
         <hasPatent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Patent3"/>
         <hasRouteOfAdministration rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Route1"/>
-        <isProvidedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1"/>
+        <isProducedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1"/>
         <providesImmunityAgainst rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease1"/>
         <targetsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species1"/>
         <hasComposition>CH3: 55%, CH5: 45%</hasComposition>
