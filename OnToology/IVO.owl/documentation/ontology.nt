@@ -1,0 +1,1034 @@
+<http://mubc/finalproject/InternationalVaccineOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://mubc/finalproject/InternationalVaccineOntology> <http://www.w3.org/2002/07/owl#versionIRI> <http://mubc/finalproject/InternationalVaccineOntology/1.0.0> .
+<http://mubc/finalproject/InternationalVaccineOntology> <http://www.w3.org/2002/07/owl#imports> <http://purl.obolibrary.org/obo/vo.owl> .
+<http://mubc/finalproject/InternationalVaccineOntology> <http://www.w3.org/2002/07/owl#imports> <http://www.ontologydesignpatterns.org/cp/owl/gotop.owl> .
+<http://mubc/finalproject/InternationalVaccineOntology> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/def/DRUGS4COVID19> .
+<http://mubc/finalproject/InternationalVaccineOntology> <http://purl.org/dc/terms/creator> "Alicia Portela Estevez" .
+<http://mubc/finalproject/InternationalVaccineOntology> <http://purl.org/dc/terms/creator> "Álvaro Martínez Petit" .
+<http://mubc/finalproject/InternationalVaccineOntology> <http://purl.org/dc/terms/description> "International Vaccine Ontology (IVO) aims to delocalize the vaccine term in order to be used by professional in any place in the globe." .
+<http://mubc/finalproject/InternationalVaccineOntology> <http://purl.org/dc/terms/license> "http://creativecommons.org/licenses/by/4.0/" .
+<http://mubc/finalproject/InternationalVaccineOntology> <http://purl.org/dc/terms/title> "International Vaccine Ontology" .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies
+<http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies> <http://www.w3.org/2000/01/rdf-schema#range> <http://mubc/finalproject/InternationalVaccineOntology#Species> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#contains
+<http://mubc/finalproject/InternationalVaccineOntology#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://mubc/finalproject/InternationalVaccineOntology#contains> <http://www.w3.org/2002/07/owl#inverseOf> <http://mubc/finalproject/InternationalVaccineOntology#isContainedIn> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#containsAgent
+<http://mubc/finalproject/InternationalVaccineOntology#containsAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://mubc/finalproject/InternationalVaccineOntology#containsAgent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://mubc/finalproject/InternationalVaccineOntology#contains> .
+<http://mubc/finalproject/InternationalVaccineOntology#containsAgent> <http://www.w3.org/2000/01/rdf-schema#range> <http://mubc/finalproject/InternationalVaccineOntology#Agent> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies
+<http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies> <http://www.w3.org/2000/01/rdf-schema#range> <http://mubc/finalproject/InternationalVaccineOntology#Species> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#containsExcipient
+<http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://mubc/finalproject/InternationalVaccineOntology#contains> .
+<http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://www.w3.org/2000/01/rdf-schema#range> <http://mubc/finalproject/InternationalVaccineOntology#Excipient> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation
+<http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation> <http://www.w3.org/2000/01/rdf-schema#range> <http://mubc/finalproject/InternationalVaccineOntology#Abbreviation> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#hasAdverseEffect
+<http://mubc/finalproject/InternationalVaccineOntology#hasAdverseEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://mubc/finalproject/InternationalVaccineOntology#hasAdverseEffect> <http://www.w3.org/2000/01/rdf-schema#range> <http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#hasGeneticExpresion
+<http://mubc/finalproject/InternationalVaccineOntology#hasGeneticExpresion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://mubc/finalproject/InternationalVaccineOntology#hasGeneticExpresion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial> .
+<http://mubc/finalproject/InternationalVaccineOntology#hasGeneticExpresion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#GeneticExpression> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#hasLicense
+<http://mubc/finalproject/InternationalVaccineOntology#hasLicense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://mubc/finalproject/InternationalVaccineOntology#hasLicense> <http://www.w3.org/2000/01/rdf-schema#range> <http://mubc/finalproject/InternationalVaccineOntology#License> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#hasPatent
+<http://mubc/finalproject/InternationalVaccineOntology#hasPatent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://mubc/finalproject/InternationalVaccineOntology#hasPatent> <http://www.w3.org/2000/01/rdf-schema#range> <http://mubc/finalproject/InternationalVaccineOntology#Patent> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration
+<http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration> <http://www.w3.org/2000/01/rdf-schema#range> <http://mubc/finalproject/InternationalVaccineOntology#RouteOfAdministration> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#isContainedIn
+<http://mubc/finalproject/InternationalVaccineOntology#isContainedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#isProducedBy
+<http://mubc/finalproject/InternationalVaccineOntology#isProducedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://mubc/finalproject/InternationalVaccineOntology#isProducedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://mubc/finalproject/InternationalVaccineOntology#produces> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy
+<http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://mubc/finalproject/InternationalVaccineOntology#provides> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#produces
+<http://mubc/finalproject/InternationalVaccineOntology#produces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#provides
+<http://mubc/finalproject/InternationalVaccineOntology#provides> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst
+<http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://purl.obolibrary.org/obo/VO_0001011> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies
+<http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies> <http://www.w3.org/2000/01/rdf-schema#range> <http://mubc/finalproject/InternationalVaccineOntology#Species> .
+# 
+# http://purl.obolibrary.org/obo/VO_0001011
+<http://purl.obolibrary.org/obo/VO_0001011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/VO_0001011> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#hasCode
+<http://mubc/finalproject/InternationalVaccineOntology#hasCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://mubc/finalproject/InternationalVaccineOntology#hasCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#hasComposition
+<http://mubc/finalproject/InternationalVaccineOntology#hasComposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://mubc/finalproject/InternationalVaccineOntology#hasComposition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#hasName
+<http://mubc/finalproject/InternationalVaccineOntology#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://mubc/finalproject/InternationalVaccineOntology#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#hasState
+<http://mubc/finalproject/InternationalVaccineOntology#hasState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://mubc/finalproject/InternationalVaccineOntology#hasState> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#requieresMinimumAge
+<http://mubc/finalproject/InternationalVaccineOntology#requieresMinimumAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://mubc/finalproject/InternationalVaccineOntology#requieresMinimumAge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Abbreviation
+<http://mubc/finalproject/InternationalVaccineOntology#Abbreviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#Abbreviation> <http://purl.org/dc/elements/1.1/description> "A reduced representation of a word"@en .
+<http://mubc/finalproject/InternationalVaccineOntology#Abbreviation> <http://www.w3.org/2000/01/rdf-schema#comment> "A vaccine can have multiple abbreviations"@en .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Adjuvant
+<http://mubc/finalproject/InternationalVaccineOntology#Adjuvant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#Adjuvant> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.obolibrary.org/obo/VO_0000580> .
+<http://mubc/finalproject/InternationalVaccineOntology#Adjuvant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Excipient> .
+<http://mubc/finalproject/InternationalVaccineOntology#Adjuvant> <http://purl.org/dc/elements/1.1/description> "Ingredient that helps creating a greater immune response in the organism" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect
+<http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/DRUGS4COVID19#Effect> .
+<http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect> <http://purl.org/dc/elements/1.1/description> "Unexpected medical problem that occurs during the treatment with a drug or therapy" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Agent
+<http://mubc/finalproject/InternationalVaccineOntology#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#Agent> <http://purl.org/dc/elements/1.1/description> "Biological entity capable of producing an infectious disease in a host" .
+<http://mubc/finalproject/InternationalVaccineOntology#Agent> <http://www.geneontology.org/formats/oboInOwl#hasSynonym> "Antigen" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#AntigenicSubunitVaccine
+<http://mubc/finalproject/InternationalVaccineOntology#AntigenicSubunitVaccine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#AntigenicSubunitVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Vaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#AntigenicSubunitVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://mubc/finalproject/InternationalVaccineOntology#containsAgent> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://mubc/finalproject/InternationalVaccineOntology#Protein> .
+<http://mubc/finalproject/InternationalVaccineOntology#AntigenicSubunitVaccine> <http://purl.org/dc/elements/1.1/description> "Vaccine that only includes specific components of the pathogen, not it as a whole" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine
+<http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#WholeAgentVaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine> <http://purl.org/dc/elements/1.1/description> "Vaccine that uses an attenuated state of the pathogen that causes a disease" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#BiologicalPreparation
+<http://mubc/finalproject/InternationalVaccineOntology#BiologicalPreparation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#BiologicalPreparation> <http://purl.org/dc/elements/1.1/description> "Derived component of living beings and their products" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine
+<http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#AntigenicSubunitVaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine> <http://purl.org/dc/elements/1.1/description> "Vaccine that includes a saccharide cover of the antigen" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine
+<http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#GeneticVaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine> <http://purl.org/dc/elements/1.1/description> "Vaccine that contains a plasmid vector in which a DNA sequence that encodes a specific antigen is introduced" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Diluent
+<http://mubc/finalproject/InternationalVaccineOntology#Diluent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#Diluent> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.obolibrary.org/obo/VO_0000219> .
+<http://mubc/finalproject/InternationalVaccineOntology#Diluent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Excipient> .
+<http://mubc/finalproject/InternationalVaccineOntology#Diluent> <http://purl.org/dc/elements/1.1/description> "Substance used to dilude another one" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Excipient
+<http://mubc/finalproject/InternationalVaccineOntology#Excipient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#Excipient> <http://purl.org/dc/elements/1.1/description> "Component of a drug different from the active substance" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial
+<http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Agent> .
+<http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial> <http://www.w3.org/2002/07/owl#disjointWith> <http://mubc/finalproject/InternationalVaccineOntology#Microorganism> .
+<http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial> <http://www.w3.org/2002/07/owl#disjointWith> <http://mubc/finalproject/InternationalVaccineOntology#Protein> .
+<http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial> <http://www.w3.org/2002/07/owl#disjointWith> <http://mubc/finalproject/InternationalVaccineOntology#Toxin> .
+<http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial> <http://purl.org/dc/elements/1.1/description> "Any material of vegetable, animal or microbian orgin which has genetic information that can be transmitted to future generations" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#GeneticVaccine
+<http://mubc/finalproject/InternationalVaccineOntology#GeneticVaccine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#GeneticVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Vaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#GeneticVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://mubc/finalproject/InternationalVaccineOntology#containsAgent> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial> .
+<http://mubc/finalproject/InternationalVaccineOntology#GeneticVaccine> <http://purl.org/dc/elements/1.1/description> "Vaccine that supplies genes that encode the proteins of the pathogen" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#HeterotypicVaccine
+<http://mubc/finalproject/InternationalVaccineOntology#HeterotypicVaccine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#HeterotypicVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Vaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#HeterotypicVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://mubc/finalproject/InternationalVaccineOntology#Species> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid6 <http://www.w3.org/2002/07/owl#complementOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies> .
+_:genid7 <http://www.w3.org/2002/07/owl#hasSelf> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#HeterotypicVaccine> <http://purl.org/dc/elements/1.1/description> "Vaccine in which the agent is a pathogen of an animal different from the one that receives the vaccine" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine
+<http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#WholeAgentVaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine> <http://purl.org/dc/elements/1.1/description> "Vaccine that uses an inactivated state of the pathogen that causes a disease" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease
+<http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease> <http://purl.org/dc/elements/1.1/description> "Disease caused by alive organisms" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Institution
+<http://mubc/finalproject/InternationalVaccineOntology#Institution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#Institution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OBI_0000245> .
+<http://mubc/finalproject/InternationalVaccineOntology#Institution> <http://purl.org/dc/elements/1.1/description> "Organization that performs a function of public interest, especillay charitable or educational" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#License
+<http://mubc/finalproject/InternationalVaccineOntology#License> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#License> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://mubc/finalproject/InternationalVaccineOntology#hasCode> .
+_:genid9 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://mubc/finalproject/InternationalVaccineOntology#License> <http://purl.org/dc/elements/1.1/description> "Resolution of the administration authorising a certain activity" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Manufacturer
+<http://mubc/finalproject/InternationalVaccineOntology#Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/VO_0000299> .
+<http://mubc/finalproject/InternationalVaccineOntology#Manufacturer> <http://purl.org/dc/elements/1.1/description> "Entrepeneur or company that from raw materials develops finished products, that is, aimed at the final consumer" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Microorganism
+<http://mubc/finalproject/InternationalVaccineOntology#Microorganism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#Microorganism> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.obolibrary.org/obo/IDO_0000528> .
+<http://mubc/finalproject/InternationalVaccineOntology#Microorganism> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://mubc/finalproject/InternationalVaccineOntology#hasState> .
+_:genid10 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid10 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://mubc/finalproject/InternationalVaccineOntology#Microorganism> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Agent> .
+<http://mubc/finalproject/InternationalVaccineOntology#Microorganism> <http://www.w3.org/2002/07/owl#disjointWith> <http://mubc/finalproject/InternationalVaccineOntology#Protein> .
+<http://mubc/finalproject/InternationalVaccineOntology#Microorganism> <http://www.w3.org/2002/07/owl#disjointWith> <http://mubc/finalproject/InternationalVaccineOntology#Toxin> .
+<http://mubc/finalproject/InternationalVaccineOntology#Microorganism> <http://purl.org/dc/elements/1.1/description> "Microscopical size organism" .
+<http://mubc/finalproject/InternationalVaccineOntology#Microorganism> <http://www.geneontology.org/formats/oboInOwl#hasSynonym> "Pathogen" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#MonodosisVaccine
+<http://mubc/finalproject/InternationalVaccineOntology#MonodosisVaccine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#MonodosisVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Vaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#MonodosisVaccine> <http://www.w3.org/2002/07/owl#disjointWith> <http://mubc/finalproject/InternationalVaccineOntology#MultidosisVaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#MonodosisVaccine> <http://purl.org/dc/elements/1.1/description> "Vaccine administrated in a single dose contained in a non-reusable container" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine
+<http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Vaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://mubc/finalproject/InternationalVaccineOntology#containsAgent> .
+_:genid11 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onClass> <http://mubc/finalproject/InternationalVaccineOntology#Agent> .
+<http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine> <http://www.w3.org/2002/07/owl#disjointWith> <http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine> <http://purl.org/dc/elements/1.1/description> "Vaccine that contains only one antigen" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#MultidosisVaccine
+<http://mubc/finalproject/InternationalVaccineOntology#MultidosisVaccine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#MultidosisVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Vaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#MultidosisVaccine> <http://purl.org/dc/elements/1.1/description> "Vaccine intended to contain more than one dose" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVesiclesVaccine
+<http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVesiclesVaccine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVesiclesVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#AntigenicSubunitVaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVesiclesVaccine> <http://purl.org/dc/elements/1.1/description> "Vaccine that contains outer membrane vesicles of some bacteria" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Patent
+<http://mubc/finalproject/InternationalVaccineOntology#Patent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#Patent> <http://purl.org/dc/elements/1.1/description> "Document in which someone is officially recognized for an invention and the rights derived from it" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine
+<http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Vaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://mubc/finalproject/InternationalVaccineOntology#containsAgent> .
+_:genid12 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onClass> <http://mubc/finalproject/InternationalVaccineOntology#Agent> .
+<http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine> <http://purl.org/dc/elements/1.1/description> "Vaccine that contains more than one antigen" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Preservative
+<http://mubc/finalproject/InternationalVaccineOntology#Preservative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#Preservative> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.obolibrary.org/obo/VO_0000851> .
+<http://mubc/finalproject/InternationalVaccineOntology#Preservative> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Excipient> .
+<http://mubc/finalproject/InternationalVaccineOntology#Preservative> <http://purl.org/dc/elements/1.1/description> "Component that can kill or prevent microorganism from growing" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#ProphylacticVaccine
+<http://mubc/finalproject/InternationalVaccineOntology#ProphylacticVaccine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#ProphylacticVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Vaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#ProphylacticVaccine> <http://www.w3.org/2002/07/owl#disjointWith> <http://mubc/finalproject/InternationalVaccineOntology#TherapeuticVaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#ProphylacticVaccine> <http://purl.org/dc/elements/1.1/description> "Vaccine that has a preventive purpose" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Protein
+<http://mubc/finalproject/InternationalVaccineOntology#Protein> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#Protein> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.obolibrary.org/obo/PRO_000000001> .
+<http://mubc/finalproject/InternationalVaccineOntology#Protein> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Agent> .
+<http://mubc/finalproject/InternationalVaccineOntology#Protein> <http://purl.org/dc/elements/1.1/description> "Large and complex molecule that plays multitude of roles in an organism" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine
+<http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#AntigenicSubunitVaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine> <http://purl.org/dc/elements/1.1/description> "Vaccine that includes inocuous proteins of the pathogen" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine
+<http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#GeneticVaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine> <http://purl.org/dc/elements/1.1/description> "Vaccine that contains a RNAm sequence that encodes a specific antigen" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Residual
+<http://mubc/finalproject/InternationalVaccineOntology#Residual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#Residual> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.obolibrary.org/obo/VO_0000854> .
+<http://mubc/finalproject/InternationalVaccineOntology#Residual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Excipient> .
+<http://mubc/finalproject/InternationalVaccineOntology#Residual> <http://purl.org/dc/elements/1.1/description> "Little substance without active function used during the production of a vaccine" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#RouteOfAdministration
+<http://mubc/finalproject/InternationalVaccineOntology#RouteOfAdministration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#RouteOfAdministration> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.obolibrary.org/obo/VO_0000574> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Species
+<http://mubc/finalproject/InternationalVaccineOntology#Species> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#Species> <http://purl.org/dc/elements/1.1/description> "Group of organisms that can reproduce between them in nature and give fertile descendence" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Stabilizer
+<http://mubc/finalproject/InternationalVaccineOntology#Stabilizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#Stabilizer> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.obolibrary.org/obo/VO_0000853> .
+<http://mubc/finalproject/InternationalVaccineOntology#Stabilizer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Excipient> .
+<http://mubc/finalproject/InternationalVaccineOntology#Stabilizer> <http://purl.org/dc/elements/1.1/description> "Product that helps mantaining the effectivity of a vaccine while it is storaged" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Surfactant
+<http://mubc/finalproject/InternationalVaccineOntology#Surfactant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#Surfactant> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.obolibrary.org/obo/VO_0000310> .
+<http://mubc/finalproject/InternationalVaccineOntology#Surfactant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Excipient> .
+<http://mubc/finalproject/InternationalVaccineOntology#Surfactant> <http://purl.org/dc/elements/1.1/description> "Substance that produce the surface tension of a liquid" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#TherapeuticVaccine
+<http://mubc/finalproject/InternationalVaccineOntology#TherapeuticVaccine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#TherapeuticVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Vaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#TherapeuticVaccine> <http://purl.org/dc/elements/1.1/description> "Vaccine aimed to stop the development of an illness" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Toxin
+<http://mubc/finalproject/InternationalVaccineOntology#Toxin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#Toxin> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.obolibrary.org/obo/VO_0000560> .
+<http://mubc/finalproject/InternationalVaccineOntology#Toxin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Agent> .
+<http://mubc/finalproject/InternationalVaccineOntology#Toxin> <http://purl.org/dc/elements/1.1/description> "A proteic or non-proteic substance produced by alive cells or organisms" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine
+<http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Vaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://mubc/finalproject/InternationalVaccineOntology#containsAgent> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://mubc/finalproject/InternationalVaccineOntology#Toxin> .
+<http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine> <http://purl.org/dc/elements/1.1/description> "Vaccine that includes inactivated toxins created by a pathogen" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Vaccine
+<http://mubc/finalproject/InternationalVaccineOntology#Vaccine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#Vaccine> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://mubc/finalproject/InternationalVaccineOntology#containsAgent> .
+_:genid14 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid14 <http://www.w3.org/2002/07/owl#onClass> <http://mubc/finalproject/InternationalVaccineOntology#Agent> .
+<http://mubc/finalproject/InternationalVaccineOntology#Vaccine> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> .
+_:genid15 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onClass> <http://mubc/finalproject/InternationalVaccineOntology#Excipient> .
+<http://mubc/finalproject/InternationalVaccineOntology#Vaccine> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://mubc/finalproject/InternationalVaccineOntology#hasLicense> .
+_:genid16 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onClass> <http://mubc/finalproject/InternationalVaccineOntology#License> .
+<http://mubc/finalproject/InternationalVaccineOntology#Vaccine> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst> .
+_:genid17 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onClass> <http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease> .
+<http://mubc/finalproject/InternationalVaccineOntology#Vaccine> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies> .
+_:genid18 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid18 <http://www.w3.org/2002/07/owl#onClass> <http://mubc/finalproject/InternationalVaccineOntology#Species> .
+<http://mubc/finalproject/InternationalVaccineOntology#Vaccine> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://mubc/finalproject/InternationalVaccineOntology#hasName> .
+_:genid19 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid19 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://mubc/finalproject/InternationalVaccineOntology#Vaccine> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://mubc/finalproject/InternationalVaccineOntology#hasComposition> .
+_:genid20 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid20 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://mubc/finalproject/InternationalVaccineOntology#Vaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#BiologicalPreparation> .
+<http://mubc/finalproject/InternationalVaccineOntology#Vaccine> <http://purl.org/dc/elements/1.1/description> "Preparation used to stimulate the body immune response against diseases" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine
+<http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#GeneticVaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine> <http://purl.org/dc/elements/1.1/description> "Vaccine that uses a modificated version of a different virus considered as a vector in which genetic material of the pathogen is introduced" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#WholeAgentVaccine
+<http://mubc/finalproject/InternationalVaccineOntology#WholeAgentVaccine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mubc/finalproject/InternationalVaccineOntology#WholeAgentVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Vaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#WholeAgentVaccine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://mubc/finalproject/InternationalVaccineOntology#containsAgent> .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://mubc/finalproject/InternationalVaccineOntology#Microorganism> .
+<http://mubc/finalproject/InternationalVaccineOntology#WholeAgentVaccine> <http://purl.org/dc/elements/1.1/description> "Vaccine that uses an attenuated or inactivated state of the pathogen that causes a disease" .
+# 
+# http://purl.obolibrary.org/obo/IDO_0000528
+<http://purl.obolibrary.org/obo/IDO_0000528> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/IDO_0000528> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Agent> .
+# 
+# http://purl.obolibrary.org/obo/OBI_0000245
+<http://purl.obolibrary.org/obo/OBI_0000245> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OBI_0000245> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://purl.obolibrary.org/obo/PRO_000000001
+<http://purl.obolibrary.org/obo/PRO_000000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/PRO_000000001> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Agent> .
+# 
+# http://purl.obolibrary.org/obo/VO_0000001
+<http://purl.obolibrary.org/obo/VO_0000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/VO_0000001> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#BiologicalPreparation> .
+# 
+# http://purl.obolibrary.org/obo/VO_0000219
+<http://purl.obolibrary.org/obo/VO_0000219> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/VO_0000219> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Excipient> .
+# 
+# http://purl.obolibrary.org/obo/VO_0000299
+<http://purl.obolibrary.org/obo/VO_0000299> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/VO_0000299> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://purl.obolibrary.org/obo/VO_0000310
+<http://purl.obolibrary.org/obo/VO_0000310> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/VO_0000310> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Excipient> .
+# 
+# http://purl.obolibrary.org/obo/VO_0000340
+<http://purl.obolibrary.org/obo/VO_0000340> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/VO_0000340> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://purl.obolibrary.org/obo/VO_0000341
+<http://purl.obolibrary.org/obo/VO_0000341> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/VO_0000341> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://purl.obolibrary.org/obo/VO_0000344
+<http://purl.obolibrary.org/obo/VO_0000344> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/VO_0000344> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://purl.obolibrary.org/obo/VO_0000376
+<http://purl.obolibrary.org/obo/VO_0000376> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/VO_0000376> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://purl.obolibrary.org/obo/VO_0000416
+<http://purl.obolibrary.org/obo/VO_0000416> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/VO_0000416> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://purl.obolibrary.org/obo/VO_0000560
+<http://purl.obolibrary.org/obo/VO_0000560> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/VO_0000560> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Agent> .
+# 
+# http://purl.obolibrary.org/obo/VO_0000574
+<http://purl.obolibrary.org/obo/VO_0000574> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/VO_0000574> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://purl.obolibrary.org/obo/VO_0000580
+<http://purl.obolibrary.org/obo/VO_0000580> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/VO_0000580> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Excipient> .
+# 
+# http://purl.obolibrary.org/obo/VO_0000851
+<http://purl.obolibrary.org/obo/VO_0000851> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/VO_0000851> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Excipient> .
+# 
+# http://purl.obolibrary.org/obo/VO_0000853
+<http://purl.obolibrary.org/obo/VO_0000853> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/VO_0000853> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Excipient> .
+# 
+# http://purl.obolibrary.org/obo/VO_0000854
+<http://purl.obolibrary.org/obo/VO_0000854> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/VO_0000854> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mubc/finalproject/InternationalVaccineOntology#Excipient> .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#GeneticExpression
+<http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#GeneticExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#GeneticExpression> <http://purl.org/dc/elements/1.1/description> "Result of the expression of genetic material, for example, a protein" .
+# 
+# https://w3id.org/def/DRUGS4COVID19#Effect
+<https://w3id.org/def/DRUGS4COVID19#Effect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/DRUGS4COVID19#Effect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Abbreviation1
+<http://mubc/finalproject/InternationalVaccineOntology#Abbreviation1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Abbreviation1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Abbreviation> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Abbreviation2
+<http://mubc/finalproject/InternationalVaccineOntology#Abbreviation2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Abbreviation2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Abbreviation> .
+<http://mubc/finalproject/InternationalVaccineOntology#Abbreviation2> <http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy> <http://mubc/finalproject/InternationalVaccineOntology#Institution1> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Abbreviation3
+<http://mubc/finalproject/InternationalVaccineOntology#Abbreviation3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Abbreviation3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Abbreviation> .
+<http://mubc/finalproject/InternationalVaccineOntology#Abbreviation3> <http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy> <http://mubc/finalproject/InternationalVaccineOntology#Institution2> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Adjuvant1
+<http://mubc/finalproject/InternationalVaccineOntology#Adjuvant1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Adjuvant1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Adjuvant> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Adjuvant2
+<http://mubc/finalproject/InternationalVaccineOntology#Adjuvant2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Adjuvant2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Adjuvant> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect1
+<http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect2
+<http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect3
+<http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine1
+<http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgent> <http://mubc/finalproject/InternationalVaccineOntology#Microorganism2> .
+<http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species2> .
+<http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Adjuvant2> .
+<http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Diluent1> .
+<http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation> <http://mubc/finalproject/InternationalVaccineOntology#Abbreviation3> .
+<http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasLicense> <http://mubc/finalproject/InternationalVaccineOntology#License4> .
+<http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasPatent> <http://mubc/finalproject/InternationalVaccineOntology#Patent3> .
+<http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration> <http://mubc/finalproject/InternationalVaccineOntology#Route2> .
+<http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#isProducedBy> <http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1> .
+<http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst> <http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease2> .
+<http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species3> .
+<http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasComposition> "CH4: 34%, CH5: 66%" .
+<http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasName> "Att" .
+<http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#requieresMinimumAge> "15"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#BiologicalProcess1
+<http://mubc/finalproject/InternationalVaccineOntology#BiologicalProcess1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#BiologicalProcess1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#BiologicalProcess> .
+<http://mubc/finalproject/InternationalVaccineOntology#BiologicalProcess1> <http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy> <http://mubc/finalproject/InternationalVaccineOntology#Institution1> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#CellularComponent1
+<http://mubc/finalproject/InternationalVaccineOntology#CellularComponent1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#CellularComponent1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#CellularComponent> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine1
+<http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgent> <http://mubc/finalproject/InternationalVaccineOntology#Protein1> .
+<http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Adjuvant2> .
+<http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Stabilizer2> .
+<http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation> <http://mubc/finalproject/InternationalVaccineOntology#Abbreviation2> .
+<http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasAdverseEffect> <http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect1> .
+<http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasLicense> <http://mubc/finalproject/InternationalVaccineOntology#License2> .
+<http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasPatent> <http://mubc/finalproject/InternationalVaccineOntology#Patent1> .
+<http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration> <http://mubc/finalproject/InternationalVaccineOntology#Route3> .
+<http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#isProducedBy> <http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1> .
+<http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst> <http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease1> .
+<http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species3> .
+<http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasComposition> "CH4: 34%, CH5: 66%" .
+<http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasName> "Conjugate vaccine" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#DNA1
+<http://mubc/finalproject/InternationalVaccineOntology#DNA1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#DNA1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial> .
+<http://mubc/finalproject/InternationalVaccineOntology#DNA1> <http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species1> .
+<http://mubc/finalproject/InternationalVaccineOntology#DNA1> <http://mubc/finalproject/InternationalVaccineOntology#hasGeneticExpresion> <http://mubc/finalproject/InternationalVaccineOntology#CellularComponent1> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#DNA2
+<http://mubc/finalproject/InternationalVaccineOntology#DNA2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#DNA2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial> .
+<http://mubc/finalproject/InternationalVaccineOntology#DNA2> <http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species2> .
+<http://mubc/finalproject/InternationalVaccineOntology#DNA2> <http://mubc/finalproject/InternationalVaccineOntology#hasGeneticExpresion> <http://mubc/finalproject/InternationalVaccineOntology#MolecularFunction1> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine1
+<http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgent> <http://mubc/finalproject/InternationalVaccineOntology#DNA1> .
+<http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species3> .
+<http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Preservative3> .
+<http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation> <http://mubc/finalproject/InternationalVaccineOntology#Abbreviation3> .
+<http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasAdverseEffect> <http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect1> .
+<http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasAdverseEffect> <http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect2> .
+<http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasLicense> <http://mubc/finalproject/InternationalVaccineOntology#License5> .
+<http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasPatent> <http://mubc/finalproject/InternationalVaccineOntology#Patent1> .
+<http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration> <http://mubc/finalproject/InternationalVaccineOntology#Route5> .
+<http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#isProducedBy> <http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1> .
+<http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst> <http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease2> .
+<http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species3> .
+<http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasComposition> "CH5: 50%, CH6: 50%" .
+<http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasName> "DNA vacc" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Diluent1
+<http://mubc/finalproject/InternationalVaccineOntology#Diluent1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Diluent1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Diluent> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Diluent2
+<http://mubc/finalproject/InternationalVaccineOntology#Diluent2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Diluent2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Diluent> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#HeterotipicVaccine1
+<http://mubc/finalproject/InternationalVaccineOntology#HeterotipicVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#HeterotipicVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#HeterotypicVaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#HeterotipicVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgent> <http://mubc/finalproject/InternationalVaccineOntology#Microorganism1> .
+<http://mubc/finalproject/InternationalVaccineOntology#HeterotipicVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species1> .
+<http://mubc/finalproject/InternationalVaccineOntology#HeterotipicVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Adjuvant1> .
+<http://mubc/finalproject/InternationalVaccineOntology#HeterotipicVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation> <http://mubc/finalproject/InternationalVaccineOntology#Abbreviation1> .
+<http://mubc/finalproject/InternationalVaccineOntology#HeterotipicVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasLicense> <http://mubc/finalproject/InternationalVaccineOntology#License1> .
+<http://mubc/finalproject/InternationalVaccineOntology#HeterotipicVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasPatent> <http://mubc/finalproject/InternationalVaccineOntology#Patent3> .
+<http://mubc/finalproject/InternationalVaccineOntology#HeterotipicVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration> <http://mubc/finalproject/InternationalVaccineOntology#Route1> .
+<http://mubc/finalproject/InternationalVaccineOntology#HeterotipicVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration> <http://mubc/finalproject/InternationalVaccineOntology#Route4> .
+<http://mubc/finalproject/InternationalVaccineOntology#HeterotipicVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst> <http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease1> .
+<http://mubc/finalproject/InternationalVaccineOntology#HeterotipicVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species1> .
+<http://mubc/finalproject/InternationalVaccineOntology#HeterotipicVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasComposition> "CH4: 12%, CH2: 88%" .
+<http://mubc/finalproject/InternationalVaccineOntology#HeterotipicVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasName> "Vacuna heterotipica 1" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine1
+<http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgent> <http://mubc/finalproject/InternationalVaccineOntology#Microorganism3> .
+<http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species5> .
+<http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Stabilizer2> .
+<http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Surfactant1> .
+<http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation> <http://mubc/finalproject/InternationalVaccineOntology#Abbreviation1> .
+<http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasLicense> <http://mubc/finalproject/InternationalVaccineOntology#License2> .
+<http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasPatent> <http://mubc/finalproject/InternationalVaccineOntology#Patent1> .
+<http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration> <http://mubc/finalproject/InternationalVaccineOntology#Route3> .
+<http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#isProducedBy> <http://mubc/finalproject/InternationalVaccineOntology#Manufacturer2> .
+<http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst> <http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease2> .
+<http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species5> .
+<http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasComposition> "CH7: 34%, CH5: 66%" .
+<http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasName> "Inny" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease1
+<http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease2
+<http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease3
+<http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Institution1
+<http://mubc/finalproject/InternationalVaccineOntology#Institution1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Institution1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Institution> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Institution2
+<http://mubc/finalproject/InternationalVaccineOntology#Institution2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Institution2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Institution> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#License1
+<http://mubc/finalproject/InternationalVaccineOntology#License1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#License1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#License> .
+<http://mubc/finalproject/InternationalVaccineOntology#License1> <http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy> <http://mubc/finalproject/InternationalVaccineOntology#Institution1> .
+<http://mubc/finalproject/InternationalVaccineOntology#License1> <http://mubc/finalproject/InternationalVaccineOntology#hasCode> "L00001" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#License2
+<http://mubc/finalproject/InternationalVaccineOntology#License2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#License2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#License> .
+<http://mubc/finalproject/InternationalVaccineOntology#License2> <http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy> <http://mubc/finalproject/InternationalVaccineOntology#Institution1> .
+<http://mubc/finalproject/InternationalVaccineOntology#License2> <http://mubc/finalproject/InternationalVaccineOntology#hasCode> "L00002" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#License3
+<http://mubc/finalproject/InternationalVaccineOntology#License3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#License3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#License> .
+<http://mubc/finalproject/InternationalVaccineOntology#License3> <http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy> <http://mubc/finalproject/InternationalVaccineOntology#Institution1> .
+<http://mubc/finalproject/InternationalVaccineOntology#License3> <http://mubc/finalproject/InternationalVaccineOntology#hasCode> "L00003" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#License4
+<http://mubc/finalproject/InternationalVaccineOntology#License4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#License4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#License> .
+<http://mubc/finalproject/InternationalVaccineOntology#License4> <http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy> <http://mubc/finalproject/InternationalVaccineOntology#Institution1> .
+<http://mubc/finalproject/InternationalVaccineOntology#License4> <http://mubc/finalproject/InternationalVaccineOntology#hasCode> "L00004" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#License5
+<http://mubc/finalproject/InternationalVaccineOntology#License5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#License5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#License> .
+<http://mubc/finalproject/InternationalVaccineOntology#License5> <http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy> <http://mubc/finalproject/InternationalVaccineOntology#Institution1> .
+<http://mubc/finalproject/InternationalVaccineOntology#License5> <http://mubc/finalproject/InternationalVaccineOntology#hasCode> "L00005" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1
+<http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Manufacturer> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Manufacturer2
+<http://mubc/finalproject/InternationalVaccineOntology#Manufacturer2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Manufacturer2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Manufacturer> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Microorganism1
+<http://mubc/finalproject/InternationalVaccineOntology#Microorganism1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Microorganism1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Microorganism> .
+<http://mubc/finalproject/InternationalVaccineOntology#Microorganism1> <http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species1> .
+<http://mubc/finalproject/InternationalVaccineOntology#Microorganism1> <http://mubc/finalproject/InternationalVaccineOntology#hasState> "attenuated" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Microorganism2
+<http://mubc/finalproject/InternationalVaccineOntology#Microorganism2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Microorganism2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Microorganism> .
+<http://mubc/finalproject/InternationalVaccineOntology#Microorganism2> <http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species4> .
+<http://mubc/finalproject/InternationalVaccineOntology#Microorganism2> <http://mubc/finalproject/InternationalVaccineOntology#hasState> "attenuated" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Microorganism3
+<http://mubc/finalproject/InternationalVaccineOntology#Microorganism3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Microorganism3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Microorganism> .
+<http://mubc/finalproject/InternationalVaccineOntology#Microorganism3> <http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species5> .
+<http://mubc/finalproject/InternationalVaccineOntology#Microorganism3> <http://mubc/finalproject/InternationalVaccineOntology#hasState> "inactivated" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#MolecularFunction1
+<http://mubc/finalproject/InternationalVaccineOntology#MolecularFunction1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#MolecularFunction1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#MolecularFunction> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine1
+<http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgent> <http://mubc/finalproject/InternationalVaccineOntology#Protein2> .
+<http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species1> .
+<http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Adjuvant2> .
+<http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Preservative2> .
+<http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Residual3> .
+<http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation> <http://mubc/finalproject/InternationalVaccineOntology#Abbreviation1> .
+<http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasLicense> <http://mubc/finalproject/InternationalVaccineOntology#License5> .
+<http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasPatent> <http://mubc/finalproject/InternationalVaccineOntology#Patent1> .
+<http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration> <http://mubc/finalproject/InternationalVaccineOntology#Route3> .
+<http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#isProducedBy> <http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1> .
+<http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst> <http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease3> .
+<http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species1> .
+<http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasComposition> "CH1: 1%, CH3: 99%" .
+<http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasName> "Monovaly" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVaccine1
+<http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVesiclesVaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgent> <http://mubc/finalproject/InternationalVaccineOntology#Protein2> .
+<http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species1> .
+<http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Residual3> .
+<http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Stabilizer2> .
+<http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation> <http://mubc/finalproject/InternationalVaccineOntology#Abbreviation2> .
+<http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasAdverseEffect> <http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect2> .
+<http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasLicense> <http://mubc/finalproject/InternationalVaccineOntology#License1> .
+<http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasPatent> <http://mubc/finalproject/InternationalVaccineOntology#Patent1> .
+<http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration> <http://mubc/finalproject/InternationalVaccineOntology#Route5> .
+<http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#isProducedBy> <http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1> .
+<http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst> <http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease3> .
+<http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species4> .
+<http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasComposition> "CH1: 20%, CH8: 80%" .
+<http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasName> "Outty" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Patent1
+<http://mubc/finalproject/InternationalVaccineOntology#Patent1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Patent1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Patent> .
+<http://mubc/finalproject/InternationalVaccineOntology#Patent1> <http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy> <http://mubc/finalproject/InternationalVaccineOntology#Institution2> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Patent2
+<http://mubc/finalproject/InternationalVaccineOntology#Patent2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Patent2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Patent> .
+<http://mubc/finalproject/InternationalVaccineOntology#Patent2> <http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy> <http://mubc/finalproject/InternationalVaccineOntology#Institution2> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Patent3
+<http://mubc/finalproject/InternationalVaccineOntology#Patent3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Patent3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Patent> .
+<http://mubc/finalproject/InternationalVaccineOntology#Patent3> <http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy> <http://mubc/finalproject/InternationalVaccineOntology#Institution2> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine1
+<http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgent> <http://mubc/finalproject/InternationalVaccineOntology#Microorganism3> .
+<http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgent> <http://mubc/finalproject/InternationalVaccineOntology#Toxin2> .
+<http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species2> .
+<http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Diluent2> .
+<http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation> <http://mubc/finalproject/InternationalVaccineOntology#Abbreviation1> .
+<http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasAdverseEffect> <http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect2> .
+<http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasLicense> <http://mubc/finalproject/InternationalVaccineOntology#License3> .
+<http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasPatent> <http://mubc/finalproject/InternationalVaccineOntology#Patent3> .
+<http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration> <http://mubc/finalproject/InternationalVaccineOntology#Route1> .
+<http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#isProducedBy> <http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1> .
+<http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst> <http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease1> .
+<http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species2> .
+<http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasComposition> "CH6: 22%, CH7: 78%" .
+<http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasName> "Poly" .
+<http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#requieresMinimumAge> "18"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Preservative1
+<http://mubc/finalproject/InternationalVaccineOntology#Preservative1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Preservative1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Preservative> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Preservative2
+<http://mubc/finalproject/InternationalVaccineOntology#Preservative2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Preservative2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Preservative> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Preservative3
+<http://mubc/finalproject/InternationalVaccineOntology#Preservative3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Preservative3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Preservative> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Protein1
+<http://mubc/finalproject/InternationalVaccineOntology#Protein1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Protein1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Protein> .
+<http://mubc/finalproject/InternationalVaccineOntology#Protein1> <http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species3> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Protein2
+<http://mubc/finalproject/InternationalVaccineOntology#Protein2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Protein2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Protein> .
+<http://mubc/finalproject/InternationalVaccineOntology#Protein2> <http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species4> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Protein3
+<http://mubc/finalproject/InternationalVaccineOntology#Protein3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Protein3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Protein> .
+<http://mubc/finalproject/InternationalVaccineOntology#Protein3> <http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species5> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine1
+<http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgent> <http://mubc/finalproject/InternationalVaccineOntology#Protein3> .
+<http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species5> .
+<http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Diluent1> .
+<http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Preservative1> .
+<http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Residual3> .
+<http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation> <http://mubc/finalproject/InternationalVaccineOntology#Abbreviation3> .
+<http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasAdverseEffect> <http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect3> .
+<http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasLicense> <http://mubc/finalproject/InternationalVaccineOntology#License4> .
+<http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasPatent> <http://mubc/finalproject/InternationalVaccineOntology#Patent1> .
+<http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration> <http://mubc/finalproject/InternationalVaccineOntology#Route2> .
+<http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#isProducedBy> <http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1> .
+<http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst> <http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease1> .
+<http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species5> .
+<http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasComposition> "CH2: 30%, CH3: 70%" .
+<http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasName> "Protty" .
+<http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#requieresMinimumAge> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#RNA1
+<http://mubc/finalproject/InternationalVaccineOntology#RNA1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#RNA1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial> .
+<http://mubc/finalproject/InternationalVaccineOntology#RNA1> <http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species3> .
+<http://mubc/finalproject/InternationalVaccineOntology#RNA1> <http://mubc/finalproject/InternationalVaccineOntology#hasGeneticExpresion> <http://mubc/finalproject/InternationalVaccineOntology#BiologicalProcess1> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#RNA2
+<http://mubc/finalproject/InternationalVaccineOntology#RNA2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#RNA2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial> .
+<http://mubc/finalproject/InternationalVaccineOntology#RNA2> <http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species4> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1
+<http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgent> <http://mubc/finalproject/InternationalVaccineOntology#RNA2> .
+<http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species5> .
+<http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Adjuvant2> .
+<http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Surfactant1> .
+<http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Surfactant2> .
+<http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation> <http://mubc/finalproject/InternationalVaccineOntology#Abbreviation2> .
+<http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasLicense> <http://mubc/finalproject/InternationalVaccineOntology#License5> .
+<http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasPatent> <http://mubc/finalproject/InternationalVaccineOntology#Patent3> .
+<http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration> <http://mubc/finalproject/InternationalVaccineOntology#Route1> .
+<http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy> <http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1> .
+<http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst> <http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease1> .
+<http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species1> .
+<http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasComposition> "CH3: 55%, CH5: 45%" .
+<http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasName> "RNA vac" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Residual1
+<http://mubc/finalproject/InternationalVaccineOntology#Residual1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Residual1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Residual> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Residual2
+<http://mubc/finalproject/InternationalVaccineOntology#Residual2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Residual2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Residual> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Residual3
+<http://mubc/finalproject/InternationalVaccineOntology#Residual3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Residual3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Residual> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Route1
+<http://mubc/finalproject/InternationalVaccineOntology#Route1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Route1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/VO_0000416> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Route2
+<http://mubc/finalproject/InternationalVaccineOntology#Route2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Route2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/VO_0000340> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Route3
+<http://mubc/finalproject/InternationalVaccineOntology#Route3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Route3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/VO_0000341> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Route4
+<http://mubc/finalproject/InternationalVaccineOntology#Route4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Route4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/VO_0000344> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Route5
+<http://mubc/finalproject/InternationalVaccineOntology#Route5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Route5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/VO_0000376> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Species1
+<http://mubc/finalproject/InternationalVaccineOntology#Species1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Species1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Species> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Species2
+<http://mubc/finalproject/InternationalVaccineOntology#Species2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Species2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Species> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Species3
+<http://mubc/finalproject/InternationalVaccineOntology#Species3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Species3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Species> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Species4
+<http://mubc/finalproject/InternationalVaccineOntology#Species4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Species4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Species> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Species5
+<http://mubc/finalproject/InternationalVaccineOntology#Species5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Species5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Species> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Stabilizer1
+<http://mubc/finalproject/InternationalVaccineOntology#Stabilizer1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Stabilizer1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Stabilizer> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Stabilizer2
+<http://mubc/finalproject/InternationalVaccineOntology#Stabilizer2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Stabilizer2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Stabilizer> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Surfactant1
+<http://mubc/finalproject/InternationalVaccineOntology#Surfactant1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Surfactant1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Surfactant> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Surfactant2
+<http://mubc/finalproject/InternationalVaccineOntology#Surfactant2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Surfactant2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Surfactant> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Surfactant3
+<http://mubc/finalproject/InternationalVaccineOntology#Surfactant3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Surfactant3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Surfactant> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Toxin1
+<http://mubc/finalproject/InternationalVaccineOntology#Toxin1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Toxin1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Toxin> .
+<http://mubc/finalproject/InternationalVaccineOntology#Toxin1> <http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species1> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Toxin2
+<http://mubc/finalproject/InternationalVaccineOntology#Toxin2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Toxin2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Toxin> .
+<http://mubc/finalproject/InternationalVaccineOntology#Toxin2> <http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species2> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#Toxin3
+<http://mubc/finalproject/InternationalVaccineOntology#Toxin3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#Toxin3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#Toxin> .
+<http://mubc/finalproject/InternationalVaccineOntology#Toxin3> <http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species3> .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine1
+<http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgent> <http://mubc/finalproject/InternationalVaccineOntology#Toxin2> .
+<http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species1> .
+<http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Residual2> .
+<http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Surfactant3> .
+<http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation> <http://mubc/finalproject/InternationalVaccineOntology#Abbreviation1> .
+<http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasAdverseEffect> <http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect1> .
+<http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasAdverseEffect> <http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect2> .
+<http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasLicense> <http://mubc/finalproject/InternationalVaccineOntology#License1> .
+<http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasPatent> <http://mubc/finalproject/InternationalVaccineOntology#Patent1> .
+<http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration> <http://mubc/finalproject/InternationalVaccineOntology#Route1> .
+<http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#isProducedBy> <http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1> .
+<http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst> <http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease3> .
+<http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species1> .
+<http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasComposition> "CH5: 19%, CH6: 81%" .
+<http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasName> "Toxy1" .
+# 
+# http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine1
+<http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine> .
+<http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgent> <http://mubc/finalproject/InternationalVaccineOntology#DNA2> .
+<http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species4> .
+<http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Diluent1> .
+<http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#containsExcipient> <http://mubc/finalproject/InternationalVaccineOntology#Stabilizer1> .
+<http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation> <http://mubc/finalproject/InternationalVaccineOntology#Abbreviation3> .
+<http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasAdverseEffect> <http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect3> .
+<http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasLicense> <http://mubc/finalproject/InternationalVaccineOntology#License4> .
+<http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasPatent> <http://mubc/finalproject/InternationalVaccineOntology#Patent2> .
+<http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration> <http://mubc/finalproject/InternationalVaccineOntology#Route3> .
+<http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#isProducedBy> <http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1> .
+<http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst> <http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease3> .
+<http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species4> .
+<http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasComposition> "CH1: 7%, CH8: 93%" .
+<http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasName> "Vecty" .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
