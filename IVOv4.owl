@@ -1,0 +1,1728 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://mubc/finalproject/InternationalVaccineOntology#"
+     xml:base="http://mubc/finalproject/InternationalVaccineOntology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ivo="http://www.semanticweb.org/InternationalVaccineOntology"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:InternationalVaccineOntology="http://mubc/finalproject/InternationalVaccineOntology#">
+    <owl:Ontology rdf:about="http://mubc/finalproject/InternationalVaccineOntology">
+        <owl:versionIRI rdf:resource="http://mubc/finalproject/InternationalVaccineOntology/1.0.0"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/vo.owl"/>
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/gotop.owl"/>
+        <owl:imports rdf:resource="https://w3id.org/def/DRUGS4COVID19"/>
+        <terms:creator>Alicia Portela Estevez</terms:creator>
+        <terms:creator>Álvaro Martínez Petit</terms:creator>
+        <terms:description>International Vaccine Ontology (IVO) aims to delocalize the vaccine term in order to be used by professional in any place in the globe.</terms:description>
+        <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
+        <terms:title>International Vaccine Ontology</terms:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies -->
+
+    <owl:ObjectProperty rdf:about="http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#contains -->
+
+    <owl:ObjectProperty rdf:about="http://mubc/finalproject/InternationalVaccineOntology#contains">
+        <owl:inverseOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#isContainedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#containsAgent -->
+
+    <owl:ObjectProperty rdf:about="http://mubc/finalproject/InternationalVaccineOntology#containsAgent">
+        <rdfs:subPropertyOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#contains"/>
+        <rdfs:range rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies -->
+
+    <owl:ObjectProperty rdf:about="http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#containsExcipient -->
+
+    <owl:ObjectProperty rdf:about="http://mubc/finalproject/InternationalVaccineOntology#containsExcipient">
+        <rdfs:subPropertyOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#contains"/>
+        <rdfs:range rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Excipient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation -->
+
+    <owl:ObjectProperty rdf:about="http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation">
+        <rdfs:range rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Abbreviation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#hasAdverseEffect -->
+
+    <owl:ObjectProperty rdf:about="http://mubc/finalproject/InternationalVaccineOntology#hasAdverseEffect">
+        <rdfs:range rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#hasGeneticExpresion -->
+
+    <owl:ObjectProperty rdf:about="http://mubc/finalproject/InternationalVaccineOntology#hasGeneticExpresion">
+        <rdfs:domain rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#GeneticExpression"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#hasLicense -->
+
+    <owl:ObjectProperty rdf:about="http://mubc/finalproject/InternationalVaccineOntology#hasLicense">
+        <rdfs:range rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#License"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#hasPatent -->
+
+    <owl:ObjectProperty rdf:about="http://mubc/finalproject/InternationalVaccineOntology#hasPatent">
+        <rdfs:range rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Patent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration -->
+
+    <owl:ObjectProperty rdf:about="http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration">
+        <rdfs:range rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#RouteOfAdministration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#isContainedIn -->
+
+    <owl:ObjectProperty rdf:about="http://mubc/finalproject/InternationalVaccineOntology#isContainedIn"/>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#isProducedBy -->
+
+    <owl:ObjectProperty rdf:about="http://mubc/finalproject/InternationalVaccineOntology#isProducedBy">
+        <owl:inverseOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#produces"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy -->
+
+    <owl:ObjectProperty rdf:about="http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy">
+        <owl:inverseOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#provides"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#produces -->
+
+    <owl:ObjectProperty rdf:about="http://mubc/finalproject/InternationalVaccineOntology#produces"/>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#provides -->
+
+    <owl:ObjectProperty rdf:about="http://mubc/finalproject/InternationalVaccineOntology#provides"/>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst -->
+
+    <owl:ObjectProperty rdf:about="http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst">
+        <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/VO_0001011"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies -->
+
+    <owl:ObjectProperty rdf:about="http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0001011 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/VO_0001011">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#hasCode -->
+
+    <owl:DatatypeProperty rdf:about="http://mubc/finalproject/InternationalVaccineOntology#hasCode">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#hasComposition -->
+
+    <owl:DatatypeProperty rdf:about="http://mubc/finalproject/InternationalVaccineOntology#hasComposition">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://mubc/finalproject/InternationalVaccineOntology#hasName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#hasState -->
+
+    <owl:DatatypeProperty rdf:about="http://mubc/finalproject/InternationalVaccineOntology#hasState">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#requieresMinimumAge -->
+
+    <owl:DatatypeProperty rdf:about="http://mubc/finalproject/InternationalVaccineOntology#requieresMinimumAge">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+    <!-- https://w3id.org/def/DRUGS4COVID19#Effect -->
+
+    <owl:Class rdf:about="https://w3id.org/def/DRUGS4COVID19#Effect">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000341 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000341">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000416 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000416">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000344 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000344">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000299 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000299">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000340 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000340">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000376 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000376">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Abbreviation -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Abbreviation">
+        <dc:description xml:lang="en">A reduced representation of a word</dc:description>
+        <rdfs:comment xml:lang="en">A vaccine can have multiple abbreviations</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Adjuvant -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Adjuvant">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/VO_0000580"/>
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Excipient"/>
+        <dc:description>Ingredient that helps creating a greater immune response in the organism</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/DRUGS4COVID19#Effect"/>
+        <dc:description>Unexpected medical problem that occurs during the treatment with a drug or therapy</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Agent -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Agent">
+        <dc:description>Biological entity capable of producing an infectious disease in a host</dc:description>
+        <oboInOwl:hasSynonym>Antigen</oboInOwl:hasSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#AntigenicSubunitVaccine -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#AntigenicSubunitVaccine">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Vaccine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#containsAgent"/>
+                <owl:someValuesFrom rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Protein"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description>Vaccine that only includes specific components of the pathogen, not it as a whole</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#WholeAgentVaccine"/>
+        <dc:description>Vaccine that uses an attenuated state of the pathogen that causes a disease</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#BiologicalPreparation -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#BiologicalPreparation">
+        <dc:description>Derived component of living beings and their products</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#AntigenicSubunitVaccine"/>
+        <dc:description>Vaccine that includes a saccharide cover of the antigen</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#GeneticVaccine"/>
+        <dc:description>Vaccine that contains a plasmid vector in which a DNA sequence that encodes a specific antigen is introduced</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Diluent -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Diluent">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/VO_0000219"/>
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Excipient"/>
+        <dc:description>Substance used to dilude another one</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Excipient -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Excipient">
+        <dc:description>Component of a drug different from the active substance</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Agent"/>
+        <owl:disjointWith rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Microorganism"/>
+        <owl:disjointWith rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Protein"/>
+        <owl:disjointWith rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Toxin"/>
+        <dc:description>Any material of vegetable, animal or microbian orgin which has genetic information that can be transmitted to future generations</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#GeneticVaccine -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#GeneticVaccine">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Vaccine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#containsAgent"/>
+                <owl:someValuesFrom rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description>Vaccine that supplies genes that encode the proteins of the pathogen</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#HeterotypicVaccine -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#HeterotypicVaccine">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Vaccine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Species"/>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies"/>
+                                        <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description>Vaccine in which the agent is a pathogen of an animal different from the one that receives the vaccine</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#WholeAgentVaccine"/>
+        <dc:description>Vaccine that uses an inactivated state of the pathogen that causes a disease</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease">
+        <dc:description>Disease caused by alive organisms</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Institution -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Institution">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <dc:description>Organization that performs a function of public interest, especillay charitable or educational</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#License -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#License">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#hasCode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <dc:description>Resolution of the administration authorising a certain activity</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Manufacturer -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Manufacturer">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VO_0000299"/>
+        <dc:description>Entrepeneur or company that from raw materials develops finished products, that is, aimed at the final consumer</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Microorganism -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Microorganism">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/IDO_0000528"/>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#hasState"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Agent"/>
+        <owl:disjointWith rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Protein"/>
+        <owl:disjointWith rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Toxin"/>
+        <dc:description>Microscopical size organism</dc:description>
+        <oboInOwl:hasSynonym>Pathogen</oboInOwl:hasSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#MonodosisVaccine -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#MonodosisVaccine">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Vaccine"/>
+        <owl:disjointWith rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#MultidosisVaccine"/>
+        <dc:description>Vaccine administrated in a single dose contained in a non-reusable container</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Vaccine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#containsAgent"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine"/>
+        <dc:description>Vaccine that contains only one antigen</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#MultidosisVaccine -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#MultidosisVaccine">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Vaccine"/>
+        <dc:description>Vaccine intended to contain more than one dose</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVesiclesVaccine -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVesiclesVaccine">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#AntigenicSubunitVaccine"/>
+        <dc:description>Vaccine that contains outer membrane vesicles of some bacteria</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Patent -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Patent">
+        <dc:description>Document in which someone is officially recognized for an invention and the rights derived from it</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Vaccine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#containsAgent"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description>Vaccine that contains more than one antigen</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Preservative -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Preservative">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/VO_0000851"/>
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Excipient"/>
+        <dc:description>Component that can kill or prevent microorganism from growing</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#ProphylacticVaccine -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#ProphylacticVaccine">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Vaccine"/>
+        <owl:disjointWith rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#TherapeuticVaccine"/>
+        <dc:description>Vaccine that has a preventive purpose</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Protein -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Protein">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/PRO_000000001"/>
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Agent"/>
+        <dc:description>Large and complex molecule that plays multitude of roles in an organism</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#AntigenicSubunitVaccine"/>
+        <dc:description>Vaccine that includes inocuous proteins of the pathogen</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#GeneticVaccine"/>
+        <dc:description>Vaccine that contains a RNAm sequence that encodes a specific antigen</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Residual -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Residual">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/VO_0000854"/>
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Excipient"/>
+        <dc:description>Little substance without active function used during the production of a vaccine</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#RouteOfAdministration -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#RouteOfAdministration">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/VO_0000574"/>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Species -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Species">
+        <dc:description>Group of organisms that can reproduce between them in nature and give fertile descendence</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Stabilizer -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Stabilizer">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/VO_0000853"/>
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Excipient"/>
+        <dc:description>Product that helps mantaining the effectivity of a vaccine while it is storaged</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Surfactant -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Surfactant">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/VO_0000310"/>
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Excipient"/>
+        <dc:description>Substance that produce the surface tension of a liquid</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#TherapeuticVaccine -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#TherapeuticVaccine">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Vaccine"/>
+        <dc:description>Vaccine aimed to stop the development of an illness</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Toxin -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Toxin">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/VO_0000560"/>
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Agent"/>
+        <dc:description>A proteic or non-proteic substance produced by alive cells or organisms</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Vaccine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#containsAgent"/>
+                <owl:someValuesFrom rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Toxin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description>Vaccine that includes inactivated toxins created by a pathogen</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Vaccine -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Vaccine">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#containsAgent"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Agent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#containsExcipient"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Excipient"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#hasLicense"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#License"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#hasName"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#hasComposition"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#BiologicalPreparation"/>
+        <dc:description>Preparation used to stimulate the body immune response against diseases</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#GeneticVaccine"/>
+        <dc:description>Vaccine that uses a modificated version of a different virus considered as a vector in which genetic material of the pathogen is introduced</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#WholeAgentVaccine -->
+
+    <owl:Class rdf:about="http://mubc/finalproject/InternationalVaccineOntology#WholeAgentVaccine">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Vaccine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#containsAgent"/>
+                <owl:someValuesFrom rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Microorganism"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description>Vaccine that uses an attenuated or inactivated state of the pathogen that causes a disease</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IDO_0000528 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IDO_0000528">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PRO_000000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PRO_000000001">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000001">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#BiologicalPreparation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000219 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000219">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Excipient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000310 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000310">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Excipient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000560 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000560">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000574 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000574">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000580 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000580">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Excipient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000851 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000851">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Excipient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000853 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000853">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Excipient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000854 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VO_0000854">
+        <rdfs:subClassOf rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Excipient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#GeneticExpression -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#GeneticExpression">
+        <dc:description>Result of the expression of genetic material, for example, a protein</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Abbreviation1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Abbreviation1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Abbreviation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Abbreviation2 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Abbreviation2">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Abbreviation"/>
+        <isProvidedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Institution1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Abbreviation3 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Abbreviation3">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Abbreviation"/>
+        <isProvidedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Institution2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Adjuvant1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Adjuvant1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Adjuvant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Adjuvant2 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Adjuvant2">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Adjuvant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect2 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect2">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect3 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect3">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine"/>
+        <containsAgent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Microorganism2"/>
+        <containsAgentThatAffectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species2"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Adjuvant2"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Diluent1"/>
+        <hasAbbreviation rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Abbreviation3"/>
+        <hasLicense rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#License4"/>
+        <hasPatent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Patent3"/>
+        <hasRouteOfAdministration rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Route2"/>
+        <isProducedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1"/>
+        <providesImmunityAgainst rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease2"/>
+        <targetsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species3"/>
+        <hasComposition>CH4: 34%, CH5: 66%</hasComposition>
+        <hasName>Att</hasName>
+        <requieresMinimumAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</requieresMinimumAge>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#BiologicalProcess1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#BiologicalProcess1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#BiologicalProcess"/>
+        <isProvidedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Institution1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#CellularComponent1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#CellularComponent1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#CellularComponent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine"/>
+        <containsAgent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Protein1"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Adjuvant2"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Stabilizer2"/>
+        <hasAbbreviation rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Abbreviation2"/>
+        <hasAdverseEffect rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect1"/>
+        <hasLicense rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#License2"/>
+        <hasPatent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Patent1"/>
+        <hasRouteOfAdministration rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Route3"/>
+        <isProducedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1"/>
+        <providesImmunityAgainst rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease1"/>
+        <targetsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species3"/>
+        <hasComposition>CH4: 34%, CH5: 66%</hasComposition>
+        <hasName>Conjugate vaccine</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#DNA1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#DNA1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial"/>
+        <affectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species1"/>
+        <hasGeneticExpresion rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#CellularComponent1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#DNA2 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#DNA2">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial"/>
+        <affectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species2"/>
+        <hasGeneticExpresion rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#MolecularFunction1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine"/>
+        <containsAgent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#DNA1"/>
+        <containsAgentThatAffectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species3"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Preservative3"/>
+        <hasAbbreviation rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Abbreviation3"/>
+        <hasAdverseEffect rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect1"/>
+        <hasAdverseEffect rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect2"/>
+        <hasLicense rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#License5"/>
+        <hasPatent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Patent1"/>
+        <hasRouteOfAdministration rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Route5"/>
+        <isProducedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1"/>
+        <providesImmunityAgainst rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease2"/>
+        <targetsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species3"/>
+        <hasComposition>CH5: 50%, CH6: 50%</hasComposition>
+        <hasName>DNA vacc</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Diluent1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Diluent1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Diluent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Diluent2 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Diluent2">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Diluent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#HeterotipicVaccine1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#HeterotipicVaccine1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#HeterotypicVaccine"/>
+        <containsAgent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Microorganism1"/>
+        <containsAgentThatAffectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species1"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Adjuvant1"/>
+        <hasAbbreviation rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Abbreviation1"/>
+        <hasLicense rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#License1"/>
+        <hasPatent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Patent3"/>
+        <hasRouteOfAdministration rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Route1"/>
+        <hasRouteOfAdministration rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Route4"/>
+        <providesImmunityAgainst rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease1"/>
+        <targetsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species1"/>
+        <hasComposition>CH4: 12%, CH2: 88%</hasComposition>
+        <hasName>Vacuna heterotipica 1</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine"/>
+        <containsAgent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Microorganism3"/>
+        <containsAgentThatAffectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species5"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Stabilizer2"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Surfactant1"/>
+        <hasAbbreviation rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Abbreviation1"/>
+        <hasLicense rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#License2"/>
+        <hasPatent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Patent1"/>
+        <hasRouteOfAdministration rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Route3"/>
+        <isProducedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Manufacturer2"/>
+        <providesImmunityAgainst rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease2"/>
+        <targetsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species5"/>
+        <hasComposition>CH7: 34%, CH5: 66%</hasComposition>
+        <hasName>Inny</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease2 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease2">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease3 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease3">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Institution1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Institution1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Institution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Institution2 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Institution2">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Institution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#License1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#License1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#License"/>
+        <isProvidedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Institution1"/>
+        <hasCode>L00001</hasCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#License2 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#License2">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#License"/>
+        <isProvidedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Institution1"/>
+        <hasCode>L00002</hasCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#License3 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#License3">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#License"/>
+        <isProvidedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Institution1"/>
+        <hasCode>L00003</hasCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#License4 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#License4">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#License"/>
+        <isProvidedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Institution1"/>
+        <hasCode>L00004</hasCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#License5 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#License5">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#License"/>
+        <isProvidedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Institution1"/>
+        <hasCode>L00005</hasCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Manufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Manufacturer2 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Manufacturer2">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Manufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Microorganism1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Microorganism1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Microorganism"/>
+        <affectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species1"/>
+        <hasState>attenuated</hasState>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Microorganism2 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Microorganism2">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Microorganism"/>
+        <affectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species4"/>
+        <hasState>attenuated</hasState>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Microorganism3 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Microorganism3">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Microorganism"/>
+        <affectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species5"/>
+        <hasState>inactivated</hasState>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#MolecularFunction1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#MolecularFunction1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#MolecularFunction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine"/>
+        <containsAgent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Protein2"/>
+        <containsAgentThatAffectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species1"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Adjuvant2"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Preservative2"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Residual3"/>
+        <hasAbbreviation rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Abbreviation1"/>
+        <hasLicense rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#License5"/>
+        <hasPatent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Patent1"/>
+        <hasRouteOfAdministration rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Route3"/>
+        <isProducedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1"/>
+        <providesImmunityAgainst rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease3"/>
+        <targetsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species1"/>
+        <hasComposition>CH1: 1%, CH3: 99%</hasComposition>
+        <hasName>Monovaly</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVaccine1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVaccine1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVesiclesVaccine"/>
+        <containsAgent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Protein2"/>
+        <containsAgentThatAffectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species1"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Residual3"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Stabilizer2"/>
+        <hasAbbreviation rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Abbreviation2"/>
+        <hasAdverseEffect rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect2"/>
+        <hasLicense rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#License1"/>
+        <hasPatent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Patent1"/>
+        <hasRouteOfAdministration rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Route5"/>
+        <isProducedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1"/>
+        <providesImmunityAgainst rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease3"/>
+        <targetsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species4"/>
+        <hasComposition>CH1: 20%, CH8: 80%</hasComposition>
+        <hasName>Outty</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Patent1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Patent1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Patent"/>
+        <isProvidedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Institution2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Patent2 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Patent2">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Patent"/>
+        <isProvidedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Institution2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Patent3 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Patent3">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Patent"/>
+        <isProvidedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Institution2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine"/>
+        <containsAgent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Microorganism3"/>
+        <containsAgent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Toxin2"/>
+        <containsAgentThatAffectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species2"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Diluent2"/>
+        <hasAbbreviation rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Abbreviation1"/>
+        <hasAdverseEffect rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect2"/>
+        <hasLicense rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#License3"/>
+        <hasPatent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Patent3"/>
+        <hasRouteOfAdministration rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Route1"/>
+        <isProducedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1"/>
+        <providesImmunityAgainst rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease1"/>
+        <targetsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species2"/>
+        <hasComposition>CH6: 22%, CH7: 78%</hasComposition>
+        <hasName>Poly</hasName>
+        <requieresMinimumAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</requieresMinimumAge>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Preservative1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Preservative1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Preservative"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Preservative2 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Preservative2">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Preservative"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Preservative3 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Preservative3">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Preservative"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Protein1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Protein1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Protein"/>
+        <affectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Protein2 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Protein2">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Protein"/>
+        <affectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Protein3 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Protein3">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Protein"/>
+        <affectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine"/>
+        <containsAgent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Protein3"/>
+        <containsAgentThatAffectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species5"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Diluent1"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Preservative1"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Residual3"/>
+        <hasAbbreviation rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Abbreviation3"/>
+        <hasAdverseEffect rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect3"/>
+        <hasLicense rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#License4"/>
+        <hasPatent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Patent1"/>
+        <hasRouteOfAdministration rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Route2"/>
+        <isProducedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1"/>
+        <providesImmunityAgainst rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease1"/>
+        <targetsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species5"/>
+        <hasComposition>CH2: 30%, CH3: 70%</hasComposition>
+        <hasName>Protty</hasName>
+        <requieresMinimumAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</requieresMinimumAge>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#RNA1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#RNA1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial"/>
+        <affectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species3"/>
+        <hasGeneticExpresion rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#BiologicalProcess1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#RNA2 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#RNA2">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial"/>
+        <affectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine"/>
+        <containsAgent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#RNA2"/>
+        <containsAgentThatAffectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species5"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Adjuvant2"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Surfactant1"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Surfactant2"/>
+        <hasAbbreviation rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Abbreviation2"/>
+        <hasLicense rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#License5"/>
+        <hasPatent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Patent3"/>
+        <hasRouteOfAdministration rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Route1"/>
+        <isProvidedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1"/>
+        <providesImmunityAgainst rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease1"/>
+        <targetsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species1"/>
+        <hasComposition>CH3: 55%, CH5: 45%</hasComposition>
+        <hasName>RNA vac</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Residual1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Residual1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Residual"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Residual2 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Residual2">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Residual"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Residual3 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Residual3">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Residual"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Route1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Route1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/VO_0000416"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Route2 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Route2">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/VO_0000340"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Route3 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Route3">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/VO_0000341"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Route4 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Route4">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/VO_0000344"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Route5 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Route5">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/VO_0000376"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Species1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Species1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Species2 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Species2">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Species3 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Species3">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Species4 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Species4">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Species5 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Species5">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Stabilizer1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Stabilizer1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Stabilizer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Stabilizer2 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Stabilizer2">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Stabilizer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Surfactant1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Surfactant1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Surfactant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Surfactant2 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Surfactant2">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Surfactant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Surfactant3 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Surfactant3">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Surfactant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Toxin1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Toxin1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Toxin"/>
+        <affectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Toxin2 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Toxin2">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Toxin"/>
+        <affectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#Toxin3 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#Toxin3">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Toxin"/>
+        <affectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine"/>
+        <containsAgent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Toxin2"/>
+        <containsAgentThatAffectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species1"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Residual2"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Surfactant3"/>
+        <hasAbbreviation rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Abbreviation1"/>
+        <hasAdverseEffect rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect1"/>
+        <hasAdverseEffect rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect2"/>
+        <hasLicense rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#License1"/>
+        <hasPatent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Patent1"/>
+        <hasRouteOfAdministration rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Route1"/>
+        <isProducedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1"/>
+        <providesImmunityAgainst rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease3"/>
+        <targetsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species1"/>
+        <hasComposition>CH5: 19%, CH6: 81%</hasComposition>
+        <hasName>Toxy1</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine1 -->
+
+    <owl:NamedIndividual rdf:about="http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine1">
+        <rdf:type rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine"/>
+        <containsAgent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#DNA2"/>
+        <containsAgentThatAffectsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species4"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Diluent1"/>
+        <containsExcipient rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Stabilizer1"/>
+        <hasAbbreviation rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Abbreviation3"/>
+        <hasAdverseEffect rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect3"/>
+        <hasLicense rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#License4"/>
+        <hasPatent rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Patent2"/>
+        <hasRouteOfAdministration rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Route3"/>
+        <isProducedBy rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1"/>
+        <providesImmunityAgainst rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease3"/>
+        <targetsSpecies rdf:resource="http://mubc/finalproject/InternationalVaccineOntology#Species4"/>
+        <hasComposition>CH1: 7%, CH8: 93%</hasComposition>
+        <hasName>Vecty</hasName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
