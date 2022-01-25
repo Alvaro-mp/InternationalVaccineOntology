@@ -1,0 +1,1777 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#containsAgent"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Protein"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#hasState"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Agent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#containsAgent"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Agent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#containsAgent"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#containsAgent"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Toxin"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Agent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#containsAgent"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Excipient"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#containsExcipient"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#License"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#hasLicense"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#hasName"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#containsAgent"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#hasComposition"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#containsAgent"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Microorganism"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species"
+    }, {
+      "@id" : "_:genid6"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#complementOf" : [ {
+    "@id" : "_:genid7"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasSelf" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#hasCode"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Alicia Portela Estevez"
+  }, {
+    "@value" : "Álvaro Martínez Petit"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "International Vaccine Ontology (IVO) aims to delocalize the vaccine term in order to be used by professional in any place in the globe."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "International Vaccine Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/vo.owl"
+  }, {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/gotop.owl"
+  }, {
+    "@id" : "https://w3id.org/def/DRUGS4COVID19"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology/1.0.0"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Abbreviation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "A reduced representation of a word"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A vaccine can have multiple abbreviations"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Abbreviation1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Abbreviation" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Abbreviation2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Abbreviation" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Institution1"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Abbreviation3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Abbreviation" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Institution2"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Adjuvant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Ingredient that helps creating a greater immune response in the organism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Excipient"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/VO_0000580"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Adjuvant1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Adjuvant" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Adjuvant2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Adjuvant" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Unexpected medical problem that occurs during the treatment with a drug or therapy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DRUGS4COVID19#Effect"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Biological entity capable of producing an infectious disease in a host"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#hasSynonym" : [ {
+    "@value" : "Antigen"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#AntigenicSubunitVaccine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Vaccine that only includes specific components of the pathogen, not it as a whole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Vaccine"
+  }, {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Vaccine that uses an attenuated state of the pathogen that causes a disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#WholeAgentVaccine"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#AttenuatedVaccine" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsAgent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Microorganism2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsExcipient" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Adjuvant2"
+  }, {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Diluent1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Abbreviation3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasComposition" : [ {
+    "@value" : "CH4: 34%, CH5: 66%"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasLicense" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#License4"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasName" : [ {
+    "@value" : "Att"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasPatent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Patent3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Route2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#isProducedBy" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#requieresMinimumAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "15"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species3"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#BiologicalPreparation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Derived component of living beings and their products"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#BiologicalProcess1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#BiologicalProcess" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Institution1"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#CellularComponent1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#CellularComponent" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Vaccine that includes a saccharide cover of the antigen"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#AntigenicSubunitVaccine"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#ConjugateVaccine" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsAgent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Protein1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsExcipient" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Adjuvant2"
+  }, {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Stabilizer2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Abbreviation2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasAdverseEffect" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasComposition" : [ {
+    "@value" : "CH4: 34%, CH5: 66%"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasLicense" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#License2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasName" : [ {
+    "@value" : "Conjugate vaccine"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasPatent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Patent1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Route3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#isProducedBy" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species3"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#DNA1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasGeneticExpresion" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#CellularComponent1"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#DNA2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasGeneticExpresion" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#MolecularFunction1"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Vaccine that contains a plasmid vector in which a DNA sequence that encodes a specific antigen is introduced"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#GeneticVaccine"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#DNAVaccine" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsAgent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#DNA1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsExcipient" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Preservative3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Abbreviation3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasAdverseEffect" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect1"
+  }, {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasComposition" : [ {
+    "@value" : "CH5: 50%, CH6: 50%"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasLicense" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#License5"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasName" : [ {
+    "@value" : "DNA vacc"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasPatent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Patent1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Route5"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#isProducedBy" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species3"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Diluent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Substance used to dilude another one"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Excipient"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/VO_0000219"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Diluent1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Diluent" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Diluent2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Diluent" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Excipient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Component of a drug different from the active substance"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Any material of vegetable, animal or microbian orgin which has genetic information that can be transmitted to future generations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Agent"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Microorganism"
+  }, {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Protein"
+  }, {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Toxin"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#GeneticVaccine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Vaccine that supplies genes that encode the proteins of the pathogen"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Vaccine"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#HeterotipicVaccine1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#HeterotypicVaccine" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsAgent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Microorganism1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsExcipient" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Adjuvant1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Abbreviation1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasComposition" : [ {
+    "@value" : "CH4: 12%, CH2: 88%"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasLicense" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#License1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasName" : [ {
+    "@value" : "Vacuna heterotipica 1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasPatent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Patent3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Route1"
+  }, {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Route4"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species1"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#HeterotypicVaccine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Vaccine in which the agent is a pathogen of an animal different from the one that receives the vaccine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Vaccine"
+  }, {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Vaccine that uses an inactivated state of the pathogen that causes a disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#WholeAgentVaccine"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#InactivatedVaccine" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsAgent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Microorganism3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species5"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsExcipient" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Stabilizer2"
+  }, {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Surfactant1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Abbreviation1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasComposition" : [ {
+    "@value" : "CH7: 34%, CH5: 66%"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasLicense" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#License2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasName" : [ {
+    "@value" : "Inny"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasPatent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Patent1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Route3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#isProducedBy" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Manufacturer2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species5"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Disease caused by alive organisms"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Institution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Organization that performs a function of public interest, especillay charitable or educational"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OBI_0000245"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Institution1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Institution" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Institution2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Institution" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#License",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Resolution of the administration authorising a certain activity"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#License1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#License" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasCode" : [ {
+    "@value" : "L00001"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Institution1"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#License2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#License" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasCode" : [ {
+    "@value" : "L00002"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Institution1"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#License3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#License" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasCode" : [ {
+    "@value" : "L00003"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Institution1"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#License4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#License" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasCode" : [ {
+    "@value" : "L00004"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Institution1"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#License5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#License" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasCode" : [ {
+    "@value" : "L00005"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Institution1"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Manufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Entrepeneur or company that from raw materials develops finished products, that is, aimed at the final consumer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/VO_0000299"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Manufacturer" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Manufacturer2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Manufacturer" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Microorganism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Microscopical size organism"
+  } ],
+  "http://www.geneontology.org/formats/oboInOwl#hasSynonym" : [ {
+    "@value" : "Pathogen"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Agent"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Protein"
+  }, {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Toxin"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/IDO_0000528"
+  }, {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Microorganism1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Microorganism" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasState" : [ {
+    "@value" : "attenuated"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Microorganism2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Microorganism" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species4"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasState" : [ {
+    "@value" : "attenuated"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Microorganism3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Microorganism" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species5"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasState" : [ {
+    "@value" : "inactivated"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#MolecularFunction1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#MolecularFunction" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#MonodosisVaccine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Vaccine administrated in a single dose contained in a non-reusable container"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Vaccine"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#MultidosisVaccine"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Vaccine that contains only one antigen"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Vaccine"
+  }, {
+    "@id" : "_:genid11"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#MonovalentVaccine" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsAgent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Protein2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsExcipient" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Adjuvant2"
+  }, {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Preservative2"
+  }, {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Residual3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Abbreviation1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasComposition" : [ {
+    "@value" : "CH1: 1%, CH3: 99%"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasLicense" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#License5"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasName" : [ {
+    "@value" : "Monovaly"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasPatent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Patent1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Route3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#isProducedBy" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species1"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#MultidosisVaccine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Vaccine intended to contain more than one dose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Vaccine"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVaccine1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVesiclesVaccine" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsAgent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Protein2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsExcipient" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Residual3"
+  }, {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Stabilizer2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Abbreviation2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasAdverseEffect" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasComposition" : [ {
+    "@value" : "CH1: 20%, CH8: 80%"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasLicense" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#License1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasName" : [ {
+    "@value" : "Outty"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasPatent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Patent1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Route5"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#isProducedBy" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species4"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#OuterMembraneVesiclesVaccine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Vaccine that contains outer membrane vesicles of some bacteria"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#AntigenicSubunitVaccine"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Patent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Document in which someone is officially recognized for an invention and the rights derived from it"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Patent1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Patent" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Institution2"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Patent2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Patent" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Institution2"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Patent3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Patent" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Institution2"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Vaccine that contains more than one antigen"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Vaccine"
+  }, {
+    "@id" : "_:genid12"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#PolyvalentVaccine" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsAgent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Microorganism3"
+  }, {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Toxin2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsExcipient" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Diluent2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Abbreviation1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasAdverseEffect" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasComposition" : [ {
+    "@value" : "CH6: 22%, CH7: 78%"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasLicense" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#License3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasName" : [ {
+    "@value" : "Poly"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasPatent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Patent3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Route1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#isProducedBy" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#requieresMinimumAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "18"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species2"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Preservative",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Component that can kill or prevent microorganism from growing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Excipient"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/VO_0000851"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Preservative1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Preservative" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Preservative2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Preservative" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Preservative3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Preservative" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#ProphylacticVaccine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Vaccine that has a preventive purpose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Vaccine"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#TherapeuticVaccine"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Protein",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Large and complex molecule that plays multitude of roles in an organism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Agent"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/PRO_000000001"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Protein1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Protein" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species3"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Protein2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Protein" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species4"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Protein3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Protein" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species5"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Vaccine that includes inocuous proteins of the pathogen"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#AntigenicSubunitVaccine"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#ProteinSubunitVaccine" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsAgent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Protein3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species5"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsExcipient" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Diluent1"
+  }, {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Preservative1"
+  }, {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Residual3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Abbreviation3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasAdverseEffect" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasComposition" : [ {
+    "@value" : "CH2: 30%, CH3: 70%"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasLicense" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#License4"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasName" : [ {
+    "@value" : "Protty"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasPatent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Patent1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Route2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#isProducedBy" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#requieresMinimumAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "6"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species5"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#RNA1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasGeneticExpresion" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#BiologicalProcess1"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#RNA2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species4"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Vaccine that contains a RNAm sequence that encodes a specific antigen"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#GeneticVaccine"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsAgent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#RNA2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species5"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsExcipient" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Adjuvant2"
+  }, {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Surfactant1"
+  }, {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Surfactant2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Abbreviation2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasComposition" : [ {
+    "@value" : "CH3: 55%, CH5: 45%"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasLicense" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#License5"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasName" : [ {
+    "@value" : "RNA vac"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasPatent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Patent3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Route1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species1"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Residual",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Little substance without active function used during the production of a vaccine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Excipient"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/VO_0000854"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Residual1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Residual" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Residual2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Residual" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Residual3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Residual" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Route1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.obolibrary.org/obo/VO_0000416" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Route2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.obolibrary.org/obo/VO_0000340" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Route3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.obolibrary.org/obo/VO_0000341" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Route4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.obolibrary.org/obo/VO_0000344" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Route5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.obolibrary.org/obo/VO_0000376" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#RouteOfAdministration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/VO_0000574"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Group of organisms that can reproduce between them in nature and give fertile descendence"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Species" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Species" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Species" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Species" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Species" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Stabilizer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Product that helps mantaining the effectivity of a vaccine while it is storaged"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Excipient"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/VO_0000853"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Stabilizer1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Stabilizer" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Stabilizer2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Stabilizer" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Surfactant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Substance that produce the surface tension of a liquid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Excipient"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/VO_0000310"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Surfactant1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Surfactant" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Surfactant2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Surfactant" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Surfactant3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Surfactant" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#TherapeuticVaccine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Vaccine aimed to stop the development of an illness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Vaccine"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Toxin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "A proteic or non-proteic substance produced by alive cells or organisms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Agent"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/VO_0000560"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Toxin1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Toxin" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species1"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Toxin2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Toxin" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species2"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Toxin3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#Toxin" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species3"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Vaccine that includes inactivated toxins created by a pathogen"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Vaccine"
+  }, {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#ToxoidVaccine" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsAgent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Toxin2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsExcipient" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Residual2"
+  }, {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Surfactant3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Abbreviation1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasAdverseEffect" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect1"
+  }, {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasComposition" : [ {
+    "@value" : "CH5: 19%, CH6: 81%"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasLicense" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#License1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasName" : [ {
+    "@value" : "Toxy1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasPatent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Patent1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Route1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#isProducedBy" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species1"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Vaccine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Preparation used to stimulate the body immune response against diseases"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#BiologicalPreparation"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
+  }, {
+    "@id" : "_:genid16"
+  }, {
+    "@id" : "_:genid17"
+  }, {
+    "@id" : "_:genid18"
+  }, {
+    "@id" : "_:genid19"
+  }, {
+    "@id" : "_:genid20"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Vaccine that uses a modificated version of a different virus considered as a vector in which genetic material of the pathogen is introduced"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#GeneticVaccine"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://mubc/finalproject/InternationalVaccineOntology#ViralVectorVaccine" ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsAgent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#DNA2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species4"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#containsExcipient" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Diluent1"
+  }, {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Stabilizer1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Abbreviation3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasAdverseEffect" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasComposition" : [ {
+    "@value" : "CH1: 7%, CH8: 93%"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasLicense" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#License4"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasName" : [ {
+    "@value" : "Vecty"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasPatent" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Patent2"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Route3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#isProducedBy" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease3"
+  } ],
+  "http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species4"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#WholeAgentVaccine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Vaccine that uses an attenuated or inactivated state of the pathogen that causes a disease"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Vaccine"
+  }, {
+    "@id" : "_:genid21"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#affectsSpecies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#contains",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#isContainedIn"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#containsAgent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#contains"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#containsAgentThatAffectsSpecies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#containsExcipient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Excipient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#contains"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#hasAbbreviation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Abbreviation"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#hasAdverseEffect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#AdverseEffect"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#hasCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#hasComposition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#hasGeneticExpresion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#GeneticMaterial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#GeneticExpression"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#hasLicense",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#License"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#hasName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#hasPatent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Patent"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#RouteOfAdministration"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#hasState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#isContainedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#isProducedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#produces"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#provides"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#produces",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#provides",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/VO_0001011"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#requieresMinimumAge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Species"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/IDO_0000528",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Agent"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OBI_0000245",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/PRO_000000001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Agent"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/VO_0000001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#BiologicalPreparation"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/VO_0000219",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Excipient"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/VO_0000299",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/VO_0000310",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Excipient"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/VO_0000340",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/VO_0000341",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/VO_0000344",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/VO_0000376",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/VO_0000416",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/VO_0000560",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Agent"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/VO_0000574",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/VO_0000580",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Excipient"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/VO_0000851",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Excipient"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/VO_0000853",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Excipient"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/VO_0000854",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Excipient"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/VO_0001011",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/cp/owl/gotop.owl#GeneticExpression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Result of the expression of genetic material, for example, a protein"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DRUGS4COVID19#Effect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+} ]
