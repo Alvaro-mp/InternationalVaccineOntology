@@ -1206,7 +1206,7 @@
   "http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration" : [ {
     "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Route1"
   } ],
-  "http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy" : [ {
+  "http://mubc/finalproject/InternationalVaccineOntology#isProducedBy" : [ {
     "@id" : "http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1"
   } ],
   "http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst" : [ {
