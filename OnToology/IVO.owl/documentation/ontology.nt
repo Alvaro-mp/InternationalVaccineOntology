@@ -901,7 +901,7 @@ _:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://mubc/finalproje
 <http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasLicense> <http://mubc/finalproject/InternationalVaccineOntology#License5> .
 <http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasPatent> <http://mubc/finalproject/InternationalVaccineOntology#Patent3> .
 <http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasRouteOfAdministration> <http://mubc/finalproject/InternationalVaccineOntology#Route1> .
-<http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#isProvidedBy> <http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1> .
+<http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#isProducedBy> <http://mubc/finalproject/InternationalVaccineOntology#Manufacturer1> .
 <http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#providesImmunityAgainst> <http://mubc/finalproject/InternationalVaccineOntology#InfectiousDisease1> .
 <http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#targetsSpecies> <http://mubc/finalproject/InternationalVaccineOntology#Species1> .
 <http://mubc/finalproject/InternationalVaccineOntology#RNAVaccine1> <http://mubc/finalproject/InternationalVaccineOntology#hasComposition> "CH3: 55%, CH5: 45%" .

@@ -1022,7 +1022,7 @@
              :hasLicense :License5 ;
              :hasPatent :Patent3 ;
              :hasRouteOfAdministration :Route1 ;
-             :isProvidedBy :Manufacturer1 ;
+             :isProducedBy :Manufacturer1 ;
              :providesImmunityAgainst :InfectiousDisease1 ;
              :targetsSpecies :Species1 ;
              :hasComposition "CH3: 55%, CH5: 45%" ;
